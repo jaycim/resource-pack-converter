@@ -1,267 +1,268 @@
 {
     "comment0":"Java Edition versions only. for pre-alpha and snapshots, only launcher available versions are included",
     "comment1":"for alpha+, all versions on https://minecraft.gamepedia.com/Java_Edition_version_history are included",
+    "comment2":"formats mostly refer to mcmeta format. 0 or lower refer to texturepack type",
     "todo0":"add more snapshots and prereleases",
     "todo1":"maybe add an ancestor and child information to snapshots/pre/rc",
     "versions":{
         "0":{
             "date":0,
-            "format":-1,
+            "format":-2,
             "name":"invalid"
         },
         "rd-134411":{
             "date":1242172800,
-            "format":-1,
+            "format":-2,
             "name":"rd-134411"
         },
         "rd-132328":{
             "date":1242172801,
-            "format":-1,
+            "format":-2,
             "name":"rd-132328"
         },
         "rd-160052":{
             "date":1242345600,
-            "format":-1,
+            "format":-2,
             "name":"rd-160052"
         },
         "rd-161348":{
             "date":1242432000,
-            "format":-1,
+            "format":-2,
             "name":"rd-161348"
         },
         "c0.0.11a":{
             "date":1242518400,
-            "format":-1,
+            "format":-2,
             "name":"classic 0.0.11a"
         },
         "c0.0.13a":{
             "date":1242950400,
-            "format":-1,
+            "format":-2,
             "name":"classic 0.0.13a"
         },
         "c0.0.13a_03":{
             "date":1243036800,
-            "format":-1,
+            "format":-2,
             "name":"classic 0.0.13a_03"
         },
         "c0.30":{
             "date":1257811200,
-            "format":-1,
+            "format":-2,
             "name":"classic 0.30"
         },
         "inf20100618":{
             "date":1276300800,
-            "format":-1,
+            "format":-2,
             "name":"infdev 20100618"
         },
         "a1.0.0":{
             "date":1277856000,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.0"
         },
         "a1.0.1":{
             "date":1278028800,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.1"
         },
         "a1.0.1_01":{
             "date":1278028801,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.1_01"
         },
         "a1.0.2":{
             "date":1278115200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.2"
         },
         "a1.0.2_01":{
             "date":1278374400,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.2_01"
         },
         "a1.0.2_02":{
             "date":1278374401,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.2_02"
         },
         "a1.0.3":{
             "date":1278374402,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.3"
         },
         "a1.0.4":{
             "date":1278547200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.4"
         },
         "a1.0.5":{
             "date":1278979200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.5"
         },
         "a1.0.5_01":{
             "date":1279065600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.5_01"
         },
         "a1.0.6":{
             "date":1279238400,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.6"
         },
         "a1.0.6_01":{
             "date":1279324800,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.6_01"
         },
         "a1.0.6_02":{
             "date":1279324801,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.6_02"
         },
         "a1.0.6_03":{
             "date":1279324802,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.6_03"
         },
         "a1.0.7":{
             "date":1279497600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.7"
         },
         "a1.0.8":{
             "date":1279584000,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.8"
         },
         "a1.0.8_01":{
             "date":1279584001,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.8_01"
         },
         "a1.0.9":{
             "date":1279670400,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.9"
         },
         "a1.0.10":{
             "date":1279756800,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.10"
         },
         "a1.0.11":{
             "date":1279843200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.11"
         },
         "a1.0.12":{
             "date":1280102400,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.12"
         },
         "a1.0.13":{
             "date":1280275200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.13"
         },
         "a1.0.13_01":{
             "date":1280361600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.13_01"
         },
         "a1.0.14":{
             "date":1280448000,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.14"
         },
         "a1.0.15":{
             "date":1280793600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.15"
         },
         "a1.0.16":{
             "date":1281571200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.16"
         },
         "a1.0.16_01":{
             "date":1281571201,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.16_01"
         },
         "a1.0.16_02":{
             "date":1281657600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.16_02"
         },
         "a1.0.17":{
             "date":1282262400,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.17"
         },
         "a1.0.17_01":{
             "date":1282262401,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.17_01"
         },
         "a1.0.17_02":{
             "date":1282262402,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.17_02"
         },
         "a1.0.17_03":{
             "date":1282521600,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.17_03"
         },
         "a1.0.17_04":{
             "date":1282521601,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.0.17_04"
         },
         "a1.1.0":{
             "date":1284076800,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.1.0"
         },
         "a1.1.1":{
             "date":1284768000,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.1.1"
         },
         "a1.1.2":{
             "date":1284768001,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.1.2"
         },
         "a1.1.2_01":{
             "date":1285200000,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.1.2_01"
         },
         "a1.2.0":{
             "date":1288396800,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.2.0"
         },
         "a1.2.0_01":{
             "date":1288483200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.2.0_01"
         },
         "a1.2.0_02":{
             "date":1288483201,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.2.0_02"
         },
         "a1.2.1":{
             "date":1288915200,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.2.1"
         },
         "a1.2.1_01":{
             "date":1288915201,
-            "format":-1,
+            "format":-2,
             "name":"alpha 1.2.1_01"
         },
         "a1.2.2":{
@@ -606,17 +607,17 @@
         },
         "1.5":{
             "date":1363132800,
-            "format":-1,
+            "format":0,
             "name":"1.5"
         },
         "1.5.1":{
             "date":1363824000,
-            "format":-1,
+            "format":0,
             "name":"1.5.1"
         },
         "1.5.2":{
             "date":1367452800,
-            "format":-1,
+            "format":0,
             "name":"1.5.2"
         },
         "1.6.1":{
