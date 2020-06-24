@@ -1,5 +1,6 @@
 {
     "todo0":"history -> idhistory, add texturehistory, maybe include location on texturemaps from olden days",
+    "todo1":"script to generate entries for this based on a form???",
     "blocks":{
         "air":{
             "id":{

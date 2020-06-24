@@ -71,7 +71,7 @@ def get_version(track, major, minor, revision, build=0):
             sys.exit(VERSION_LOOKUP_FAILED_KEYERROR)
     if (track == ReleaseTrack.SNAPSHOT):
         try:
-            return versions["{}w{}{}".format(major,minor,revision)] #yeah this seems gross, but (track,year,week,alpha) would also be 4 params so you can't do that overload
+            return versions["{}w{}{}".format(major,minor,revision)] #yeah this seems gross
         except(KeyError):
             sys.exit(VERSION_LOOKUP_FAILED_KEYERROR)
     if (track == ReleaseTrack.CLASSIC):
@@ -87,7 +87,7 @@ def get_version(track, major, minor, revision, build=0):
             sys.exit(VERSION_LOOKUP_FAILED_KEYERROR)
     if (track == ReleaseTrack.INFDEV):
         try:
-            return versions["inf{}{}{}".format(major,minor,revision)] #also gross, but (track,year,month,day) doesn't roll off the tongue
+            return versions["inf{}{}{}".format(major,minor,revision)] #also gross
         except(KeyError):
             sys.exit(VERSION_LOOKUP_FAILED_KEYERROR)
     if (track == ReleaseTrack.INDEV or track == ReleaseTrack.APRILFOOL):
