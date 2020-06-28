@@ -1,3 +1,8 @@
+"""json_editor.py: aims to provide a tkinter based graphical json editor"""
+
+__author__   = "Nicholas Cline"
+__license__  = "GNU GPL v3.0"
+
 import os, json, tkinter
 from tkinter import filedialog,messagebox
 
