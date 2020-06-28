@@ -36,7 +36,58 @@ def setcolourscheme(self, fgc, bgc, bga):
     bgcolour = bgc
     bgaccent = bga
 
-class JSONArray:
+class JsonElement:
+    def __init__(self,master):
+        self.master = master
+        self.value = None
+        self.type = None
+    
+    def __str__(self):
+        _v = self.value
+        if (type(_v) is str):
+            return "\"{}\"".format(_v)
+        if (_v is None):
+            return "null"
+        if (_v is True):
+            return "true"
+        if (_v is False):
+            return "false"
+        return str(_v)
+
+class JsonArray(JsonElement):
+    def __init__(self,master):
+        self.master = master
+        self.children = []
+    
+    def __str__(self):
+        _clist = []
+        for item in self.children:
+            _clist.append(str(item["element"]))
+        return "["+','.join(_clist)+"]"
+    
+    def addchildren(self,child):
+        children.append({"element":child})
+
+class JsonObject(JsonArray):
+    def __init__(self,master):
+        self.master = master
+        self.children = []
+    
+    def __str__(self):
+        _clist = []
+        for item in self.children:
+            _clist.append("\"{}\":{}".format(item["key"],str(item["element"])))
+        return "{"+','.join(_clist)+"}"
+    
+    def addchildren(self,child,key=None):
+        children.append({"key":key,"element":child})
+
+class JsonRoot(JsonObject):
+    def __init__(self,master):
+        self.master = master
+        self.children = []
+
+class aJSONArray:
     def __init__(self, master, children=[]):
         self.children = children
         self.widget = tkinter.Frame(master=master)
@@ -66,16 +117,16 @@ class JSONArray:
             c = None
             _child = tkinter.Entry(master=_frame,width=1,diabled=True)
         if (childtype == "object"):
-            c = JSONObject(self.widget)
+            c = aJSONObject(self.widget)
             _child = c.widget
         if (childtype == "array"):
-            c = JSONArray(self.widget)
+            c = aJSONArray(self.widget)
             _child = c.widget
         _child.pack(side="left")
         self.children.append({"child":c,"childframe":_frame})
         _frame.pack(fill="x")
 
-class JSONObject:
+class aJSONObject:
     def __init__(self, master, children=[]):
         self.children = children
         self.widget = tkinter.Frame(master=master)
@@ -115,14 +166,14 @@ class JSONObject:
         if (childtype == "object"):
             _open = tkinter.Label(master=_frame,text="{")
             _open.grid(row=_row,column=_col,sticky="nw");_row+=1;_col=0
-            c = JSONObject(_frame)
+            c = aJSONObject(_frame)
             _child = c.widget
             _close = tkinter.Label(master=_frame,text="}")
             _close.grid(row=_row+1,column=_col)
         if (childtype == "array"):
             _open = tkinter.Label(master=_frame,text="[")
             _open.grid(row=_row,column=_col,sticky="nw");_row+=1;_col=0
-            c = JSONArray(_frame)
+            c = aJSONArray(_frame)
             _child = c.widget
             _close = tkinter.Label(master=_frame,text="]")
             _close.grid(row=_row+1,column=_col)
@@ -179,7 +230,7 @@ class SettingsWindow:
 
         self.unsavedchanges = True
         self.jsonFile = None
-        self.parentobject = JSONObject(master=self.contentframe)
+        self.parentobject = aJSONObject(master=self.contentframe)
         self.parentobject.widget.grid(sticky="nsew")
         self.parentobject.addchild("text")
         self.parentobject.addchild("object")
