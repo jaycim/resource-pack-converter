@@ -39,9 +39,6 @@
                     "alt":"1.8",
                     "value":"stone"
                 }
-            },
-            "texture":{
-
             }
         },
         "granite":{
@@ -59,9 +56,6 @@
                     "alt":"1.13",
                     "value":"granite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "polished_granite":{
@@ -79,9 +73,6 @@
                     "alt":"1.13",
                     "value":"polished_granite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "diorite":{
@@ -99,9 +90,6 @@
                     "alt":"1.13",
                     "value":"diorite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "polished_diorite":{
@@ -119,9 +107,6 @@
                     "alt":"1.13",
                     "value":"polished_diorite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "andesite":{
@@ -139,9 +124,6 @@
                     "alt":"1.13",
                     "value":"andesite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "polished_andesite":{
@@ -159,9 +141,6 @@
                     "alt":"1.13",
                     "value":"polished_andesite"
                 }
-            },
-            "texture":{
-                
             }
         },
         "grass_block":{
@@ -177,9 +156,6 @@
                     "alt":"1.13",
                     "value":"grass_block"
                 }
-            },
-            "texture":{
-                
             }
         }
     }
