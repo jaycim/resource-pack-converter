@@ -39,6 +39,7 @@ def setcolourscheme(self, fgc, bgc, bga):
 class JsonElement:
     def __init__(self,master):
         self.master = master
+        self.frame = tkinter.Frame(master=master)
         self.value = None
         self.type = None
     
@@ -56,8 +57,8 @@ class JsonElement:
 
 class JsonArray(JsonElement):
     def __init__(self,master):
-        self.master = master
         self.children = []
+        JsonElement.__init__(self,master)
     
     def __str__(self):
         _clist = []
@@ -65,27 +66,21 @@ class JsonArray(JsonElement):
             _clist.append(str(item["element"]))
         return "["+','.join(_clist)+"]"
     
-    def addchildren(self,child):
-        children.append({"element":child})
+    def addchild(self,child):
+        self.children.append({"element":child})
 
-class JsonObject(JsonArray):
-    def __init__(self,master):
-        self.master = master
-        self.children = []
-    
+class JsonObject(JsonArray):    
     def __str__(self):
         _clist = []
         for item in self.children:
             _clist.append("\"{}\":{}".format(item["key"],str(item["element"])))
         return "{"+','.join(_clist)+"}"
     
-    def addchildren(self,child,key=None):
-        children.append({"key":key,"element":child})
+    def addchild(self,child,key=None):
+        self.children.append({"key":key,"element":child})
 
 class JsonRoot(JsonObject):
-    def __init__(self,master):
-        self.master = master
-        self.children = []
+    pass
 
 class aJSONArray:
     def __init__(self, master, children=[]):
@@ -230,11 +225,9 @@ class SettingsWindow:
 
         self.unsavedchanges = True
         self.jsonFile = None
-        self.parentobject = aJSONObject(master=self.contentframe)
-        self.parentobject.widget.grid(sticky="nsew")
-        self.parentobject.addchild("text")
-        self.parentobject.addchild("object")
-        self.parentobject.children[1]["child"].addchild("text")
+        self.parentobject = JsonRoot(master=self.contentframe)
+        self.parentobject.frame.grid(sticky="nsew")
+        print(type(self.parentobject))
 
         updatecolours(self.master)
     
